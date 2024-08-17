@@ -138,12 +138,14 @@ a {
 #main-nav {
     background: white;
 }
+.mainNav li{
+    color: #000000;
+}
 
 
 .header {
     position: fixed;
     width: 100%;
-    background: transparent;
     z-index: 10;
     border-radius: 0;
 }
@@ -188,6 +190,9 @@ a {
     height: auto;
     padding: 10px 0;
 }
+.navbar-inverse .navbar {
+    background: #fff; /* Solid white background */
+}
 
 .logo {
     max-width: 100%;
@@ -204,9 +209,12 @@ a {
 }
 
 .header .navbar {
+    position: fixed;
+    width: 60%; /* Adjusted to 100% for full width */
     margin: 0;
-    background: #fff;
+    background: #fff; /* Solid white background */
     border: 0;
+    z-index: 1000;
 }
 
 .navbar-inverse .navbar-nav > li > a {
@@ -225,6 +233,11 @@ a {
 
 .header .navbar-nav > li > a {
     padding: 25px 18px;
+}
+
+.header .navbar-nav > li > a:hover,
+.header .navbar-nav > li > a:focus {
+    color: #1371AF; /* Highlight color on hover */
 }
 
 .header .navbar, .navbar-inverse {
@@ -254,6 +267,7 @@ a {
     .page-section p {
         font-size: 1.1em;
         line-height: 1.6em;
+        color: #2B2B2B;
     }
 
 .darkBg {
@@ -661,6 +675,16 @@ footer {
     top: 15%;
 }
 
+.da-slider h2{
+    -webkit-text-stroke-width: 0.4px;
+    -webkit-text-stroke-color: black;
+}
+
+.da-slider p{
+    color: #24242e;
+}
+
+
 @media (min-width: 768px) {
     .header .navbar-brand {
         padding-left: 0;
@@ -682,8 +706,6 @@ footer {
 
     #main-nav {
         background: #fff !important;
-        -webkit-box-shadow: 0px 3px 4px 0px rgba(50, 50, 50, 0.38);
-        -moz-box-shadow: 0px 3px 4px 0px rgba(50, 50, 50, 0.38);
         box-shadow: 0px 3px 4px 0px rgba(50, 50, 50, 0.38);
     }
 

@@ -22,20 +22,20 @@ body {
 
 ::selection {
     color: #fff;
-    background: #1789d4;
+    background: #1371AF;
 }
 
 ::-moz-selection {
     color: #fff;
-    background: #1789d4;
+    background: #1371AF;
 }
 
 p {
-    color: #070505;
+    color: #858585;
 }
 
 .pDark p {
-    color: #070505;
+    color: #2B2B2B;
 }
 
 h2 {
@@ -68,7 +68,7 @@ h3 {
     }
 
 a {
-    color: #1789d4;
+    color: #1371AF;
     text-decoration: none;
     text-shadow: none;
     -webkit-transition: all 0.2s linear;
@@ -79,7 +79,7 @@ a {
 }
 
     a:hover {
-        color: #148cdb;
+        color: #2593DB;
         text-decoration: none;
     }
 
@@ -93,7 +93,7 @@ a {
     }
 
 .btn-primary {
-    background: #1789d4;
+    background: #1371AF;
 }
 
 .form-control {
@@ -103,7 +103,6 @@ a {
 .mrgn30 {
     margin: 30px 0;
 }
-
 .copyright {
     color: #6D6D6D;
     background: #202527;
@@ -122,14 +121,14 @@ a {
 }
 
 .tray {
-    border: 1px solid #1789d4;
+    border: 1px solid #1371AF;
     padding: 12px;
     margin-bottom: 15px;
     border-radius: 10px;
 }
 
     .tray .fa {
-        color: #1789d4;
+        color: #1371AF;
         display: block;
         text-align: center;
         font-size: 3em;
@@ -140,14 +139,13 @@ a {
     background: white;
 }
 
+
 .header {
     position: fixed;
     width: 100%;
     background: transparent;
     z-index: 10;
     border-radius: 0;
-    /*  box-shadow: 0 0 10px rgba(0,0,0,0.2);
-    border-top: 2px solid #1789d4;*/
 }
 
     .header .navbar-brand {
@@ -155,16 +153,16 @@ a {
     }
 
 .navbar-inverse .navbar-toggle {
-    border-color: #1789d4;
-    background-color: #1789d4;
+    border-color: #1371AF;
+    background-color: #1371AF;
 }
 
     .navbar-inverse .navbar-toggle .icon-bar {
-        /*background-color: #1789d4;*/
+        /*background-color: #1371AF;*/
     }
 
     .navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus {
-        background: #1789d4;
+        background: #1371AF;
     }
 
         .navbar-inverse .navbar-toggle:hover .icon-bar {
@@ -172,7 +170,7 @@ a {
         }
 
 .navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus {
-    color: #1789d4;
+    color: #1371AF;
 }
 
 .navbar-toggle {
@@ -183,16 +181,17 @@ a {
     padding: 16px 15px;
     line-height: 18px;
     height: 50px;
-    /*color:#1789d4;*/
+    color:#1371AF;
 }
-
-.navbar-brand b {
-    color: #1789d4;
+.header .navbar-brand {
+    max-width: 40px; /* Adjust this value as needed */
+    height: auto;
+    padding: 10px 0;
 }
 
 .logo {
-    font-size: 2.2em;
-    text-shadow: none;
+    max-width: 100%;
+    height: auto;
 }
 
     .logo:hover {
@@ -211,20 +210,17 @@ a {
 }
 
 .navbar-inverse .navbar-nav > li > a {
-    color: #070505;
+    color: #858585;
     font-size: 1.2em;
 }
 
 .navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
-    color: #070505;
-    font-size:1.3em;
-    font-weight: 500;
-    text-decoration: underline;
+    color: #1371AF;
     background: none;
 }
 
 .navbar-nav > li:hover, .navbar-nav > li a:hover {
-    color: #1789d4;
+    color: #1371AF;
 }
 
 .header .navbar-nav > li > a {
@@ -252,7 +248,7 @@ a {
         }
 
     .page-section h2 {
-        color: #1789d4;
+        color: #1371AF;
     }
 
     .page-section p {
@@ -261,7 +257,7 @@ a {
     }
 
 .darkBg {
-    background: #101316;
+    background: #2d3538;
 }
 
     .darkBg h2 {
@@ -276,13 +272,13 @@ a {
     }
 
 #services .fa {
-    color: #E0E0E0;
+    color: #1371af;
     font-size: 40px;
     height: 68px;
     width: 68px;
     line-height: 68px;
     margin-right: 10px;
-    background-color: rgba(255, 255, 255, 0.09);
+    background-color: rgba(19, 113, 175, 0.09);
     text-align: center;
     display: block;
     border-radius: 10%;
@@ -316,7 +312,7 @@ a {
     box-shadow: 0px 0px 1px rgba(0,0,0,0.4);
     max-height: 600px;
     height: 600px;
-    background: #0d1836 url("../images/banner-bg.png") left bottom no-repeat;
+    background: rgba(0, 0, 0, 0.9) url("../images/banner-bg.png") left bottom no-repeat ;
     background-size: 100% 100%;
     background-size: cover;
 }
@@ -347,7 +343,7 @@ a {
     .banner-content p {
         font-size: 1.9em;
         font-weight: normal;
-        color: #070505;
+        color: #B9B9B9;
     }
 
 .sub-heading {
@@ -376,9 +372,7 @@ a {
 }
 /* Services
     -------------------------------------------------*/
-.media-heading {
-    color: #fff;
-}
+/*  */
 /* Team
     ---------------------------------------------------*/
 .team-member {
@@ -449,12 +443,12 @@ nav#filter {
     nav#filter a {
         padding: 4px 12px;
         line-height: 20px;
-        border: 1px solid #1789d4;
+        border: 1px solid #1371AF;
         text-decoration: none;
     }
 
 .current {
-    background: #1789d4;
+    background: #1371AF;
     color: #fff;
 }
 

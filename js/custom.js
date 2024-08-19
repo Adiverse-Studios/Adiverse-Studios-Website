@@ -52,7 +52,17 @@ var customScripts = {
     },
     onePageNav: function () {
 		if($('#main-nav ul li:first-child').hasClass('active')){
-					$('#main-nav').css('background','none');
+            // Glass Morphism, Header MainNav ::: PP69
+					$('#main-nav').css({
+                        "background": "rgba(100,108,254,0.45)",
+
+                        // rgba( 186, 114, 255, 0.45 )
+                        "box-shadow": "0 8px 32px 0 rgba( 31, 38, 135, 0.37 )",
+                        "backdrop-filter": "blur( 3.5px )",
+                        "-webkit-backdrop-filter": "blur( 3.5px )",
+                        // "border-radius": "10px",
+                        // "border": "1px solid rgba( 255, 255, 255, 0.18 )"
+                    });
 		}
         $('#mainNav').onePageNav({        
             currentClass: 'active',

@@ -22,12 +22,12 @@ body {
 
 ::selection {
     color: #fff;
-    background: #1371AF;
+    background: #652cd0;
 }
 
 ::-moz-selection {
     color: #fff;
-    background: #1371AF;
+    background: #652cd0;
 }
 
 p {
@@ -68,7 +68,7 @@ h3 {
     }
 
 a {
-    color: #1371AF;
+    color: #652cd0;
     text-decoration: none;
     text-shadow: none;
     -webkit-transition: all 0.2s linear;
@@ -93,7 +93,7 @@ a {
     }
 
 .btn-primary {
-    background: #1371AF;
+    background: #652cd0;
 }
 
 .form-control {
@@ -121,14 +121,14 @@ a {
 }
 
 .tray {
-    border: 1px solid #1371AF;
+    border: 1px solid #652cd0;
     padding: 12px;
     margin-bottom: 15px;
     border-radius: 10px;
 }
 
     .tray .fa {
-        color: #1371AF;
+        color: #652cd0;
         display: block;
         text-align: center;
         font-size: 3em;
@@ -155,16 +155,16 @@ a {
     }
 
 .navbar-inverse .navbar-toggle {
-    border-color: #1371AF;
-    background-color: #1371AF;
+    border-color: #652cd0;
+    background-color: #652cd0;
 }
 
     .navbar-inverse .navbar-toggle .icon-bar {
-        /*background-color: #1371AF;*/
+        /*background-color: #652cd0;*/
     }
 
     .navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus {
-        background: #1371AF;
+        background: #652cd0;
     }
 
         .navbar-inverse .navbar-toggle:hover .icon-bar {
@@ -172,7 +172,7 @@ a {
         }
 
 .navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus {
-    color: #1371AF;
+    color: #652cd0;
 }
 
 .navbar-toggle {
@@ -183,12 +183,11 @@ a {
     padding: 16px 15px;
     line-height: 18px;
     height: 50px;
-    color:#1371AF;
+    color: #652cd0;
 }
-.header .navbar-brand {
-    max-width: 40px; /* Adjust this value as needed */
-    height: auto;
-    padding: 10px 0;
+
+.header .navbar-nav {
+    float: right;
 }
 .navbar-inverse .navbar {
     background: #fff; /* Solid white background */
@@ -218,17 +217,18 @@ a {
 }
 
 .navbar-inverse .navbar-nav > li > a {
-    color: #858585;
-    font-size: 1.2em;
+    color: #0f0a12;
+    font-size: 1.1em;
+    font-weight: bold;
 }
 
 .navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
-    color: #1371AF;
+    color: #652cd0;
     background: none;
 }
 
 .navbar-nav > li:hover, .navbar-nav > li a:hover {
-    color: #1371AF;
+    color: #652cd0;
 }
 
 .header .navbar-nav > li > a {
@@ -237,7 +237,7 @@ a {
 
 .header .navbar-nav > li > a:hover,
 .header .navbar-nav > li > a:focus {
-    color: #1371AF; /* Highlight color on hover */
+    color: #652cd0; /* Highlight color on hover */
 }
 
 .header .navbar, .navbar-inverse {
@@ -261,7 +261,7 @@ a {
         }
 
     .page-section h2 {
-        color: #1371AF;
+        color: #652cd0;
     }
 
     .page-section p {
@@ -286,7 +286,7 @@ a {
     }
 
 #services .fa {
-    color: #1371af;
+    color: #652cd0;
     font-size: 40px;
     height: 68px;
     width: 68px;
@@ -430,6 +430,32 @@ a {
     padding: 5px 15px;
 }
 
+/* Ensure the image container is centered */
+.center {
+    text-align: center;
+}
+
+.img-responsive {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.img-thumbnail {
+    border: 3px solid #ddd; 
+    border-radius: 50%; 
+    padding: 0; 
+    overflow: hidden; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+#team img {
+    width: 250px; 
+    height: 250px;
+    object-fit: cover; 
+}
+
+
 
 /* ------- */
 
@@ -457,12 +483,12 @@ nav#filter {
     nav#filter a {
         padding: 4px 12px;
         line-height: 20px;
-        border: 1px solid #1371AF;
+        border: 1px solid #652cd0;
         text-decoration: none;
     }
 
 .current {
-    background: #1371AF;
+    background: #652cd0;
     color: #fff;
 }
 
@@ -747,18 +773,80 @@ footer {
         }
 }
 
-@media (max-width:760px) {
-    .header .navbar-nav > li > a {
-        padding: 7px 12px;
-        font-size: 14px;
+@media (max-width: 768px) {
+    .header .navbar {
+        width: 100%; /* Ensure full width on mobile */
+        position: static; /* Reset fixed positioning on mobile */
     }
 
-    .navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
-        border-color: #A8A8A8;
+    .header .navbar-nav {
+        float: none; /* Remove float on mobile */
+        text-align: center; /* Center align nav items */
+        margin: 0;
+    }
+
+    .header .navbar-nav > li {
+        display: inline-block; /* Stack items horizontally */
+    }
+
+    .header .navbar-nav > li > a {
+        padding: 15px; /* Adjust padding */
+        font-size: 16px; /* Adjust font size */
+    }
+
+    .navbar-toggle {
+        float: right; /* Align hamburger menu to the right */
+    }
+
+    .navbar-collapse {
+        display: none; /* Hide collapsed menu initially */
+    }
+
+    .navbar-toggle.collapsed + .navbar-collapse {
+        display: block; /* Show menu when toggled */
+    }
+
+    .header .navbar-brand {
+        float: none; /* Center align brand on mobile */
+        text-align: center;
+        display: block;
+    }
+}
+/* Optimize #team img for mobile devices */
+@media (max-width: 768px) {
+    #team img {
+        width: 100%;
+        height: auto;
+        object-fit: cover; /* Ensure the image covers the container without distortion */
     }
 }
 
 @media (max-width: 480px) {
+    #team img {
+        width: 100%;
+        height: auto;
+        object-fit: cover; /* Ensure the image covers the container without distortion */
+    }
+}
+
+@media (max-width: 320px) {
+    #team img {
+        width: 100%;
+        height: auto;
+        object-fit: cover; /* Ensure the image covers the container without distortion */
+    }
+}
+
+
+@media (max-width: 480px) {
+    .header .navbar-nav > li > a {
+        padding: 10px; /* Adjust padding for smaller screens */
+        font-size: 14px; /* Adjust font size for smaller screens */
+    }
+
+    .navbar-toggle {
+        float: right; /* Keep hamburger menu aligned */
+    }
     .banner-container {
         width: 100%;
         background-size: contain;

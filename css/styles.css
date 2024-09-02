@@ -130,8 +130,8 @@ a:hover {
 
 .tray .fa {
     color: #652cd0;
-    display: block;
-    text-align: center;
+    display: flex;
+    align-items: center;
     font-size: 3em;
 }
 
